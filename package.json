@@ -4,5 +4,18 @@
   "main": "index.js",
   "repository": "https://github.com/nabechin/react_from_zero.git",
   "author": "yuma",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.0",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^5.3.1",
+    "webpack": "^5.36.1",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "build:dev": "webpack --config webpack.config.js",
+    "serve": "webpack serve --config webpack.config.js"
+  }
 }
