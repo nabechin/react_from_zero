@@ -8,10 +8,14 @@
   "devDependencies": {
     "@babel/core": "^7.14.0",
     "@babel/preset-env": "^7.14.0",
+    "@babel/preset-react": "^7.13.13",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.4",
     "eslint-loader": "^4.0.2",
     "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "prettier": "^2.2.1",
     "webpack": "^5.36.1",
     "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^3.11.2"
@@ -19,7 +23,8 @@
   "scripts": {
     "build:dev": "webpack --config webpack.config.js",
     "serve": "webpack serve --config webpack.config.js",
-    "lint:js": "eslint './src/js/*.{js,jsx}'"
+    "lint:js": "eslint './src/js/*.{js,jsx}'",
+    "prettier": "prettier --write './src/js/*.{js,jsx}'"
   },
   "dependencies": {
     "eslint": "^7.2.0",
@@ -27,6 +32,8 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-react-hooks": "^4"
+    "eslint-plugin-react-hooks": "^4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }
