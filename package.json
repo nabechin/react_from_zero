@@ -23,11 +23,13 @@
     "react-test-renderer": "^17.0.2",
     "webpack": "^5.36.1",
     "webpack-cli": "^4.6.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
   },
   "scripts": {
-    "build:dev": "webpack --config webpack.config.js",
-    "serve": "webpack serve --config webpack.config.js",
+    "build:dev": "webpack --config webpack.dev.js",
+    "build:prod": "NODE_ENV=production webpack --config webpack.prod.js",
+    "serve": "webpack serve --config webpack.dev.js",
     "lint:js": "eslint './src/js/*.{js,jsx}'",
     "prettier": "prettier --write './src/js/*.{js,jsx}'",
     "jest": "jest"
